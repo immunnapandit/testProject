@@ -15,7 +15,7 @@
     <ProjectGuid>{9a7b1a11-4355-4d63-8e4a-dc2ae9e03d53}</ProjectGuid>
     <Name>testProject</Name>
     <RootNamespace>testProject</RootNamespace>
-    <StartupObject>switchStatement</StartupObject>
+    <StartupObject>helloWorld</StartupObject>
     <StartupType>Class</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -39,6 +39,11 @@
       <Name>conditional</Name>
       <Link>conditional</Link>
     </Content>
+    <Content Include="AxClass\exceptionHandling">
+      <SubType>Content</SubType>
+      <Name>exceptionHandling</Name>
+      <Link>exceptionHandling</Link>
+    </Content>
     <Content Include="AxClass\helloWorld">
       <SubType>Content</SubType>
       <Name>helloWorld</Name>
@@ -54,7 +59,17 @@
       <Name>switchStatement</Name>
       <Link>switchStatement</Link>
     </Content>
+    <Content Include="AxEdt\EmployeeId">
+      <SubType>Content</SubType>
+      <Name>EmployeeId</Name>
+      <Link>EmployeeId</Link>
+    </Content>
+    <Content Include="AxTable\EmployeeTable">
+      <SubType>Content</SubType>
+      <Name>EmployeeTable</Name>
+      <Link>EmployeeTable</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
-  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.17.0.targets" />
 </Project>
